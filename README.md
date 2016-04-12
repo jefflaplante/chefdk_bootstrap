@@ -1,5 +1,9 @@
 # ChefDK_Bootstrap [![Build Status](https://travis-ci.org/Nordstrom/chefdk_bootstrap.svg?branch=master)](https://travis-ci.org/Nordstrom/chefdk_bootstrap)
 
+## Derivative Work of Nordstroms
+
+This cookbook is a local fork of the excellent work done by Nordstrom that is freely available on supermarket.chef.io. We have forked it so that we may host it internally.
+
 ## Setup your laptop for Chef development in minutes
 
 Run one simple command to easily set up your Windows or Mac machine
@@ -12,19 +16,19 @@ for Chef cookbook development in about **20 minutes**.
 
 ## Windows Quickstart
 
-Copy the PowerShell command below and paste them into a **PowerShell Admin** console. This will download and run the [bootstrap](https://raw.githubusercontent.com/Nordstrom/chefdk_bootstrap/master/bootstrap.ps1)
+Copy the PowerShell command below and paste them into a **PowerShell Admin** console. This will download and run the [bootstrap](https://https://github.wdig.com/raw/disid/chefdk_bootstrap/master/bootstrap.ps1)
 script on your workstation.
 
 ```PowerShell
- (Invoke-WebRequest -Uri https://raw.githubusercontent.com/Nordstrom/chefdk_bootstrap/master/bootstrap.ps1).Content | Invoke-Expression
+ (Invoke-WebRequest -Uri https://github.wdig.com/raw/disid/chefdk_bootstrap/master/bootstrap.ps1).Content | Invoke-Expression
 ```
 
 ## Mac Quickstart
 
-Copy the command below and paste it into a terminal. This will download and run the [bootstrap](https://raw.githubusercontent.com/Nordstrom/chefdk_bootstrap/master/bootstrap) script on your workstation.
+Copy the command below and paste it into a terminal. This will download and run the [bootstrap](https://github.wdig.com/raw/disid/chefdk_bootstrap/master/bootstrap) script on your workstation.
 
 ```bash
-curl https://raw.githubusercontent.com/Nordstrom/chefdk_bootstrap/master/bootstrap | bash
+curl https://github.wdig.com/raw/disid/chefdk_bootstrap/master/bootstrap | bash
 ```
 
 ### Mac ChefDK profile setup
@@ -53,11 +57,11 @@ $env:no_proxy='localhost,127.0.0.1,example.com'
 ```
 
 #### Use this proxy-aware bootstrap script
-Copy the PowerShell command below and paste them into a **PowerShell Admin** console. This will execute the [bootstrap](https://raw.githubusercontent.com/Nordstrom/chefdk_bootstrap/master/bootstrap.ps1)
+Copy the PowerShell command below and paste them into a **PowerShell Admin** console. This will execute the [bootstrap](https://github.wdig.com/raw/disid/chefdk_bootstrap/master/bootstrap.ps1)
 script on your workstation.
 
 ```PowerShell
- (Invoke-WebRequest -Uri https://raw.githubusercontent.com/Nordstrom/chefdk_bootstrap/master/bootstrap.ps1 -ProxyUseDefaultCredentials -Proxy $env:https_proxy).Content | Invoke-Expression
+ (Invoke-WebRequest -Uri https://github.wdig.com/raw/disid/chefdk_bootstrap/master/bootstrap.ps1 -ProxyUseDefaultCredentials -Proxy $env:https_proxy).Content | Invoke-Expression
 ```
 
 ### Mac
@@ -101,7 +105,7 @@ export CHEFDK_BOOTSTRAP_JSON_ATTRIBUTES="http://server/attributes.json"
 #### Windows
 
 ```PowerShell
-$install = (Invoke-WebRequest -Uri https://raw.githubusercontent.com/Nordstrom/chefdk_bootstrap/master/bootstrap.ps1 -ProxyUseDefaultCredentials -Proxy $env:https_proxy).Content
+$install = (Invoke-WebRequest -Uri https://github.wdig.com/raw/disid/chefdk_bootstrap/master/bootstrap.ps1 -ProxyUseDefaultCredentials -Proxy $env:https_proxy).Content
 
 "$install <your cookbook name> <your private supermarket url>" | Invoke-Expression
 ```
@@ -109,7 +113,7 @@ $install = (Invoke-WebRequest -Uri https://raw.githubusercontent.com/Nordstrom/c
 #### Mac
 
 ```bash
-curl https://raw.githubusercontent.com/Nordstrom/chefdk_bootstrap/master/bootstrap | bash -s -- <your cookbook name> <your private supermarket url>
+curl https://github.wdig.com/raw/disid/chefdk_bootstrap/master/bootstrap | bash -s -- <your cookbook name> <your private supermarket url>
 ```
 
 ## What does it do?
